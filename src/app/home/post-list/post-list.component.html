@@ -1,6 +1,7 @@
 
 <div *ngFor="let newPost of childPostList">
-    <p><a href="#">{{newPost.title}} by {{newPost.author}}</a>
+    <p><span class="link" (click)="postHasBeenClicked(newPost)">{{newPost.title}}</span><small> by {{newPost.author}}</small>
+      <app-full-post [childSelectedPost]="newPost" [selectedPost]="selectedPost" (doneClickedSender)="postDone()"></app-full-post>
       <br>
     </p>
 </div>

@@ -1,8 +1,6 @@
-a {
-  color: blue !important;
-  text-decoration: none;
-}
-p{
+
+.link {
   font-weight: bold;
   font-size: 150%;
+  color: blue
 }
