@@ -1,0 +1,13 @@
+<form>
+    <h3>New Post</h3>
+    <label for="title">What did you eat?</label>
+    <input type="text" #title>
+    <br>
+    <label for="author">Details about your meal:</label>
+    <input type="text" #author>
+    <br>
+    <label for="content">How many calories where in your meal?</label>
+    <input type="text"  #content>
+    <br>
+    <button type="button" (click)="submitForm(title.value, author.value, content.value);">Create Post!</button>
+</form>
